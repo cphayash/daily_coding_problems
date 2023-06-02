@@ -39,7 +39,8 @@ def rotateLinkedList(head: Node) -> Node:
     cur.next = head
     return cur
 
-
+# Time: O(nk) | n is length of linked list, k is number of rotations
+# Space: O(n) | n is length of linked list
 def rotateLinkedListByK(head: Node, k: int) -> Node:
     for _ in range(k):
         head = rotateLinkedList(head)
