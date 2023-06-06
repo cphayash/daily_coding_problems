@@ -1,0 +1,1 @@
+A collection of solutions to challenges from Daily Coding Problem
