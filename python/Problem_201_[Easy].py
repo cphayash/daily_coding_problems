@@ -17,12 +17,9 @@ For example, 1 -> 3 -> 5. The weight of the path is the sum of the entries.
 Write a program that returns the weight of the maximum weight path.
 """
 
-
+# Time: O(n) | n is len(triangle)
+# Space: O(1)
 def findMaximumWeight(triangle: List[List[int]]) -> int:
-    # runningSum = 0
-    # for row in triangle:
-    #     runningSum += max(row)
-    # return runningSum
     return sum(max(row) for row in triangle)
 
 
