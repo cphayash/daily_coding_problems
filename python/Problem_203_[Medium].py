@@ -1,4 +1,3 @@
-# from test_tools import printTestResults, runTest
 from test_tools import runAllTests
 from typing import List
 """
@@ -22,7 +21,7 @@ def findMinElement(array: List[int]) -> int:
         valFirst = array[startIdx]
         valMid = array[halfIdx]
         valEnd = array[endIdx]
-        
+
         # Lowest value in the first half
         if valFirst > valMid and valMid < valEnd:
             endIdx = halfIdx
